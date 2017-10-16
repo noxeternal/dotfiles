@@ -1,0 +1,18 @@
+{
+	"auto_upgrade_ignore":
+	[
+		"Seti_UI"
+	],
+	"color_scheme": "Packages/User/Seti_UI/Scheme/Seti_monokai.tmTheme",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"CSS",
+		"Vintage"
+	],
+	"show_full_path": false,
+	"tab_size": 2,
+	"theme": "Seti_orig.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"update_check": false
+}

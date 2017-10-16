@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AlignTab",
+		"AngularJS",
+		"BracketHighlighter",
+		"CSS3",
+		"DocBlockr",
+		"Emmet",
+		"jQuery",
+		"Package Control",
+		"Sass",
+		"Seti_UI",
+		"SideBarEnhancements",
+		"SideBarGit",
+		"StandardFormat",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-contrib-standard",
+		"SublimeLinter-php",
+		"TypeScript"
+	]
+}

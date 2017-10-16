@@ -1,0 +1,7 @@
+{
+	"cmd": [
+		"/bin/bash",
+		"/home/mikee/bin/rytPush",
+		"$file"
+	]
+}

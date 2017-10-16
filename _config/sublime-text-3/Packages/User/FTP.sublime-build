@@ -1,0 +1,3 @@
+{
+	"cmd": ["siteFTP.js","$file"]
+}

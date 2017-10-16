@@ -1,0 +1,8 @@
+name: monitor
+windows:
+  - monitor:
+      layout: 3767,170x47,0,0{118x47,0,0[118x23,0,0,0,118x23,0,24,8],51x47,119,0,5}
+      panes:
+        - htop
+        - ssh -t proc htop
+        - node /home/mikee/node/output/blessed/app.js

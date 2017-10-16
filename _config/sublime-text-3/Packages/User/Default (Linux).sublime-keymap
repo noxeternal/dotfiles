@@ -1,0 +1,6 @@
+[
+	{ "keys": ["f5"], "command": "refresh_folder_list" },
+	{ "keys": ["ctrl+shift+g"], "command": "git_status" },
+	{ "keys": ["ctrl+b"], "command": "git_push", "context": [{ "key": "selector", "operator": "equal", "operand": "text.git-status"}]},	
+	{ "keys": ["ctrl+a","ctrl+s"], "command": "align_tab", "args": {"user_input": " "}}
+]

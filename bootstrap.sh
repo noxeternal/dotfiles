@@ -15,10 +15,10 @@ sudo gem install tmuxinator
 
 pushd $HOME
 	echo "cloning dotfiles..."
-	git clone https://github.com/noxeternal/dotfiles
+	git clone https://github.com/noxeternal/dotfiles src/dotfiles
 
 	echo "changing shell..."
-	usermod -s /bin/zsh $USER
+	sudo usermod -s /bin/zsh $USER
 
 	echo "Cloning oh-my-zsh..."
 	if [[ ! -e .oh-my-zsh ]]
@@ -29,11 +29,12 @@ pushd $HOME
 	echo "Removing initial files..."
 	rm -v .bashrc .bash_logout
 
+	echo "Creating directories..."
 	mkdir -p .config
 	mkdir -p bin
 
 	echo "Symlinking..."
-	pushd dotfiles
+	pushd src/dotfiles
 		stow -t $HOME bash zsh git tmux jshint
 		stow -t $HOME/.config _config
 		stow -t $HOME/bin _bin

@@ -11,7 +11,7 @@ echo "apt install... ("$APT")"
 sudo apt install -y $APT
 
 echo "installing tmuxinator..."
-gem install tmuxinator
+sudo gem install tmuxinator
 
 pushd $HOME
 	echo "cloning dotfiles..."
@@ -29,12 +29,16 @@ pushd $HOME
 	echo "Removing initial files..."
 	rm -v .bashrc .bash_logout
 
+	mkdir -p .config
+	mkdir -p bin
+
 	echo "Symlinking..."
-	stow -t $HOME bash zsh git shell tmux jshint
-	stow -t $HOME/.config _config
-	stow -t $HOME/bin _bin
+	pushd dotfiles
+		stow -t $HOME bash zsh git tmux jshint
+		stow -t $HOME/.config _config
+		stow -t $HOME/bin _bin
+	popd
 popd
 
 echo "fin."
 echo ""
-
